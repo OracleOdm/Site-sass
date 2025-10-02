@@ -1,0 +1,22 @@
+@use '../base/variable' as*;
+
+nav {
+    display: flex;
+    ;
+    align-items: center;
+
+}
+
+nav h2 {
+    background-color: $color-principal;
+    color: rgb(252, 207, 207);
+    padding: 4px;
+    border-radius: 10px;
+    font-size: 35px;
+    padding-left: 10px;
+
+}
+
+nav .titles {
+    width: 80%;
+}

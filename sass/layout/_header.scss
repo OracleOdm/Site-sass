@@ -1,0 +1,29 @@
+@use '../base/variable' as*;
+
+header span {
+    background-color: $color-principal;
+    color: white;
+    width: 20%;
+    text-align: right;
+    padding: 2px;
+}
+
+.entete {
+    display: flex;
+    justify-content: end;
+}
+
+.titles h1 {
+    color: grey;
+    padding-bottom: 5px;
+}
+
+// media queries 
+@media screen and (max-width:650px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}

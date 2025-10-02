@@ -1,0 +1,13 @@
+@mixin triangle($direction, $color, $size) {
+    width: 10;
+    border-style: solid;
+}
+
+// média queries pour mobile et tablette 
+@mixin respond($breakpoint) {
+    @if $breakpoint ==mobile {
+        @media (max-width: 576px) {
+            @content
+        }
+    }
+}

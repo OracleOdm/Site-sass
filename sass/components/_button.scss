@@ -1,0 +1,12 @@
+@use '../abstracts/mixin';
+@use '../base/variable';
+@use '../base/variable' as*;
+@import '../abstracts/mixin';
+
+button {
+    margin-bottom: 10px;
+    background-color: $couleur-bouton;
+    color: white;
+
+    @include triangle("down", $color-card, 0.8rem, );
+}
