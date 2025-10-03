@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "MaPolice";
+  src: url("/font/AlfaSlabOne-Regular.ttf");
+}
+.corp,
+.text-cadre,
+h3,
+nav {
+  padding: 4px;
+  font-family: "MaPolice";
+  font-weight: normal;
+}
+
+.container__card--cadre h3 {
+  font-size: 35px;
+  padding-left: 9px;
+  color: black;
+  padding-top: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.corp {
+  margin-bottom: 30px;
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*# sourceMappingURL=typographie.css.map */

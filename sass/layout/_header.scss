@@ -8,6 +8,15 @@ header span {
     padding: 2px;
 }
 
+hr {
+    margin: 0;
+    width: 100%;
+}
+
+.header {
+    border: 8px solid;
+}
+
 .entete {
     display: flex;
     justify-content: end;
@@ -25,5 +34,19 @@ header span {
         flex-direction: column;
         align-items: center;
         width: 100%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .entete {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }

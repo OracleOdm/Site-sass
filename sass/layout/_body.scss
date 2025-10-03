@@ -4,6 +4,13 @@
     margin: 0;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
 body {
     background-image: url(/images/fond.webp);
 }

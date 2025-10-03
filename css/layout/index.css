@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-image: url(/images/fond.webp);
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+header span {
+  background-color: black;
+  color: white;
+  width: 20%;
+  text-align: right;
+  padding: 2px;
+}
+
+.entete {
+  display: flex;
+  justify-content: end;
+}
+
+.titles h1 {
+  color: grey;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 650px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -14,10 +14,15 @@ nav {
     font-weight: normal;
 }
 
-h3 {
+.titles h3 {
+    font-size: 40px;
+}
+
+.container__card h3 {
     font-size: 35px;
     padding-left: 9px;
-    color: $color-principal;
+    background-color: $color-principal;
+    color: white;
     padding-top: 5px;
     border-radius: 5px;
     margin: 5px;

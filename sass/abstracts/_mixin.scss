@@ -1,13 +1,28 @@
 @mixin triangle($direction, $color, $size) {
-    width: 10;
-    border-style: solid;
-}
+    width: 0;
+    height: 0;
 
-// média queries pour mobile et tablette 
-@mixin respond($breakpoint) {
-    @if $breakpoint ==mobile {
-        @media (max-width: 576px) {
-            @content
-        }
+    @if $direction =="up" {
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-bottom: $size solid $color;
+    }
+
+    @else if $direction =="down" {
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-top: $size solid $color;
+    }
+
+    @else if $direction =="left" {
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-top: $size solid $color;
+    }
+
+    @else if $direction =="right" {
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-top: $size solid $color;
     }
 }

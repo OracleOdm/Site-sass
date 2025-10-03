@@ -1,12 +1,29 @@
-@use '../abstracts/mixin';
-@use '../base/variable';
+@use '../abstracts/mixin' as*;
 @use '../base/variable' as*;
-@import '../abstracts/mixin';
 
 button {
-    margin-bottom: 10px;
+    align-self: flex-end;
+    margin-top: auto;
     background-color: $couleur-bouton;
     color: white;
+    position: relative;
+    padding: 1rem;
+    padding-right: 2.5rem;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    border-radius: 8px;
 
-    @include triangle("down", $color-card, 0.8rem, );
+    &::after {
+        content: '';
+        margin-left: 0.5rem;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        @include triangle("down", white, 0.5rem);
+    }
+}
+
+button:hover {
+    background-color: $couleur-red;
+    cursor: pointer;
 }
